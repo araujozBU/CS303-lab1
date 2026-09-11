@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+body {
+    background-color: orange;
+    font-family: 'Creepster', cursive;
+}
+
+ul {
+    display: flex;
+    padding: 1%;
+    list-style: none;
+}
+
+li {
+    padding: 0 1%;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+}
+
+img {
+    width: 100%;
+}
+
+div {
+    width: 80vw;
+    margin: 0 auto;
+}
