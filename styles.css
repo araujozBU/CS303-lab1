@@ -1,18 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: orange;
     font-family: 'Creepster', cursive;
+    font-size: calc(16px + 0.25vw);
+    margin: 0;
+    padding: 32px;
 }
 
 ul {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 12px;
     padding: 1%;
     list-style: none;
 }
 
 li {
-    padding: 0 1%;
+    padding: 0;
+}
+
+nav a {
+    display: inline-block;
+    padding: 0.5% 1%;
+    border: 2px solid white;
+    color: white;
+    font-size: calc(13px + 0.2vw);
 }
 
 footer {
@@ -21,10 +40,39 @@ footer {
 }
 
 img {
+    display: block;
     width: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
-div {
-    width: 80vw;
+.content_wrapper {
     margin: 0 auto;
+}
+
+h1 {
+    font-size: calc(29px + 1vw);
+}
+
+@media (max-width: 1000px) {
+    body {
+        padding: 16px;
+    }
+
+    ul {
+        gap: 6px;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    li {
+        min-width: 0;
+    }
+
+    nav a {
+        width: 100%;
+        padding: 8px;
+        text-align: center;
+        font-size: calc(11px + 0.2vw);
+    }
 }
